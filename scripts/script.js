@@ -17,6 +17,11 @@
 const unorderedListElement = document.querySelector(".shopping");//DOM element
 function populateList (list)
 {
+
+    // for (let item of list )
+    // {
+
+    // }
     for (let i = 0 ; i <list.length ; i++)
     {
         console.log(list[i]); //for each of these items, create an li, append it to unorderedlistElement
@@ -30,3 +35,14 @@ function populateList (list)
 let shoppingList = ["cheese", "bread", "green pepper"];
 
 populateList(shoppingList);
+
+function changeListStyle()
+{
+  unorderedListElement.classList.add("squareList");
+  unorderedListElement.classList.remove("circleList");
+
+//   unorderedListElement.classList.replace("circleList", "squareList");
+
+}
+
+changeListStyle()
